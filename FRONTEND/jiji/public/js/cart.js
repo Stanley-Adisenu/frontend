@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
  
 
     // alert("fetching")
-    fetch('http://127.0.0.1:8000/jiji/carts/', {
+    fetch('https://jiji-twg0.onrender.com/jiji/carts/', {
         method: 'GET',
        
     })
@@ -100,7 +100,7 @@ function updateCartHome(data){
 
     alert("Item  will be removed from cart");
 
-    fetch(`http://127.0.0.1:8000/jiji/carts/${id}/`, {
+    fetch(`https://jiji-twg0.onrender.com/jiji/carts/${id}/`, {
         method: 'DELETE',
        
     })
@@ -149,7 +149,7 @@ function updateCartHome(data){
         return
     }
  
-    fetch(`http://127.0.0.1:8000/jiji/carts/${item}/`,{
+    fetch(`https://jiji-twg0.onrender.com/jiji/carts/${item}/`,{
         method: 'PATCH',
         headers:{
           'content-Type':'application/json'

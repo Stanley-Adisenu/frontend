@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
  
 
       // alert("fetching")
-      fetch('http://127.0.0.1:8000/jiji/products/', {
+      fetch('https://jiji-twg0.onrender.com/jiji/products/', {
           method: 'GET',
          
       })
@@ -289,7 +289,7 @@ function categoryFilter(categoryId){
   const catId  = categoryId;
   console.log(catId)
 
-  fetch(`http://127.0.0.1:8000/jiji/products/?category_id=${categoryId}`, {
+  fetch(`https://jiji-twg0.onrender.com/jiji/products/?category_id=${categoryId}`, {
     method: 'GET',
    
 })
@@ -341,7 +341,7 @@ const categoryId = localStorage.getItem('catId');
      return 
   }
 // alert("fetching")
-  fetch(`http://127.0.0.1:8000/jiji/products/?&min_price=${minRange}&max_price=${maxRange}`, {
+  fetch(`https://jiji-twg0.onrender.com/jiji/products/?&min_price=${minRange}&max_price=${maxRange}`, {
     method: 'GET',
    
 })
@@ -391,7 +391,7 @@ function regionFilter(regionId){
   // const catId  = categoryId;
   // console.log(catId)
 
-  fetch(`http://127.0.0.1:8000/jiji/products/?category_id=${regionId}`, {
+  fetch(`https://jiji-twg0.onrender.com/jiji/products/?category_id=${regionId}`, {
     method: 'GET',
    
 })
@@ -432,7 +432,7 @@ function addToCart(cartId){
   const cartItem  = cartId;
   console.log(cartItem)
 // alert("fetching")
-  fetch('http://127.0.0.1:8000/jiji/addcart/',{
+  fetch('https://jiji-twg0.onrender.com/jiji/addcart/',{
     method: 'POST',
     headers:{
       'content-Type':'application/json'
