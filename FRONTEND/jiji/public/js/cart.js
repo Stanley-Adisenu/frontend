@@ -49,8 +49,8 @@ function updateCartHome(data){
             let row =
              `
              <div style="width: 30rem; height: 25rem; margin-right: 1.7rem; margin-bottom: 1.7rem;" class="relative rounded-md bg-white ">
-             <!-- <div class="h-[70%] rounded-t-lg" style="background-image: url('../public/img/images.jpeg'); background-position: center; background-size: cover;">
-        </div> -->
+              <div class="h-[70%] rounded-t-lg" style="background-image: url('${product.product_id.product_image}'); background-position: center; background-size: cover;">
+        </div> 
             <div class="text-[14px] py-2 px-2 ">
                 <h1 style="font-size: 1.2rem;">${product.product_id.name}</h1>
                 <h2 class="text-green-600">GHC ${product.product_id.price}</h2>
