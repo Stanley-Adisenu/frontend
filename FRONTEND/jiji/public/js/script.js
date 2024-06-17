@@ -133,7 +133,8 @@ function updateHome(data){
            <a href="#">
                <div>
                <!--./FRONTEND/jiji/public/img/fruit.jpg-->
-                   <img src="${product.prduct_image}" class="h-[8rem] w-[11rem] object-cover rounded-t-md">
+
+                  <img src="${product.product_url}" class="h-[8rem] w-[11rem] object-cover rounded-t-md">
                </div>
                <div class=" py-4 px-2">
                    <h1>${product.name}</h1>
@@ -154,7 +155,8 @@ function updateHome(data){
           let row1=
           `          
           <div onClick="addtoCart(${product.id})" class="relative rounded-md bg-white h-[16rem]">
-          <div class="h-[75%] rounded-t-lg" style="background-image: url('${product.prduct_image}'); background-position: center; background-size: cover;">
+         
+          <div class="h-[75%] rounded-t-lg" style="background-image: url('${product.prduct_url}'); background-position: center; background-size: cover;">
           </div>
           <div class="text-[14px] py-2 px-2 ">
               <h1>${product.name}</h1>
