@@ -116,7 +116,7 @@ function updateCartHome(data){
     //   alert('JSONed')
     //    console.log(data)
         
-       window.location.href="/FRONTEND/jiji/src/cart.html"
+    //    window.location.href="/FRONTEND/jiji/src/cart.html"
         
       
         
@@ -124,7 +124,7 @@ function updateCartHome(data){
     .catch(error => {
         // alert("alerted")
         // console.error('An error occured:', error);
-        window.location.href="/FRONTEND/jiji/src/cart.html"
+        // window.location.href="/FRONTEND/jiji/src/cart.html"
 
     });
 
@@ -144,7 +144,7 @@ function updateCartHome(data){
     }
     else if (order < 1){
         alert("Enter an amount to order")
-        window.location.href="/FRONTEND/jiji/src/cart.html"
+        // window.location.href="/FRONTEND/jiji/src/cart.html"
 
         return
     }
